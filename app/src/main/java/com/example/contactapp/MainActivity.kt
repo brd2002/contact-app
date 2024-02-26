@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         var datalist = ArrayList<Model>()
         datalist.add(Model(R.drawable.a , R.drawable.user1 , "My name is bharat"))
         datalist.add(Model(R.drawable.b , R.drawable.user2 , "My name is Kisan"))
-        datalist.add(Model(R.drawable.a , R.drawable.user3 , "My name is Kuntal"))
+        datalist.add(Model(R.drawable.c , R.drawable.user3 , "My name is Kuntal"))
         var adapter = Adapter(datalist)
         binding.rv.layoutManager = LinearLayoutManager(this)
         binding.rv.adapter = adapter

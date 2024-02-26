@@ -20,8 +20,9 @@ class Adapter (var dataList : ArrayList<Model>) : RecyclerView.Adapter<Adapter.M
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.binding.imageView.setImageResource(dataList[position].tumbnaleImage)
-        holder.binding.chanelLogo.setImageResource(dataList[position].chanelLogo)
-        holder.binding.title.text = dataList[position].title
+        var model = dataList.get(position)
+        holder.binding.imageView.setImageResource(model.tumbnaleImage)
+        holder.binding.chanelLogo.setImageResource(model.chanelLogo)
+        holder.binding.title.text = model.title
     }
 }
